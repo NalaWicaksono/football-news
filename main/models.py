@@ -1,6 +1,7 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.html import strip_tags
 
 class News(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True) # tambahkan ini
